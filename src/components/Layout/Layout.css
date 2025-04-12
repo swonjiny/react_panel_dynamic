@@ -89,6 +89,7 @@
 .floating-panel {
     transition: all 0.3s ease;
     overflow: hidden;
+    z-index: 100;
 }
 
 .floating-panel.collapsed {

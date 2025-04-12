@@ -2,18 +2,16 @@
 import {useEffect, useState} from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import LeftPanel from './LeftPanel';
-import RightPanel from './RightPanel';
 import MainContent from './MainContent';
-import ChartPanel from '../Panels/ChartPanel';
-import ListPanel from '../Panels/ListPanel';
+
 import './Layout.css';
 import './Header.css';
 import './Panels.css';
 import './Footer.css';
-import axios from "axios";
-import Scene3D from "../Panels/3D/Scene3D.jsx";
-import DynamicComponent from "../DynamicComponent.jsx";
+
+import Root3D from "@/components/View/Root3D.jsx";
+import Default3D from "@/components/View/Default3D.jsx";
+import Physic3D from "@/components/View/Physic3D.jsx";
 
 
 function Layout() {
@@ -38,37 +36,9 @@ function Layout() {
             <div className="content-area">
 
                 <MainContent tabIndex={tabIndex} setTabIndex={setTabIndex} tabs={tabs} setTabs={setTabs}/>
-
-                {/*<div className="floating-panels-container">*/}
-                {/*    /!* Left Panels *!/*/}
-                {/*    <div className="left-floating-panels">*/}
-                {/*        <LeftPanel*/}
-                {/*            position="top"*/}
-                {/*            isVisible={panels.leftNav.isVisible}*/}
-                {/*            isCollapsed={panels.leftNav.isCollapsed}*/}
-                {/*            onClose={() => handlePanelClose('leftNav')}*/}
-                {/*            onToggle={() => handlePanelToggle('leftNav')}*/}
-                {/*            title="차트 패널"*/}
-                {/*        >*/}
-                {/*            <ChartPanel />*/}
-                {/*            <Scene3D/>*/}
-                {/*        </LeftPanel>*/}
-
-                {/*        <LeftPanel*/}
-                {/*            position="bottom"*/}
-                {/*            isVisible={panels.leftWork.isVisible}*/}
-                {/*            isCollapsed={panels.leftWork.isCollapsed}*/}
-                {/*            onClose={() => handlePanelClose('leftWork')}*/}
-                {/*            onToggle={() => handlePanelToggle('leftWork')}*/}
-                {/*            title="리스트 패널"*/}
-                {/*        >*/}
-                {/*            fk*/}
-                {/*            {LeftNavPanel && <DynamicComponent path={LeftNavPanel}/>}*/}
-                {/*            /!*{LeftNavPanel && LeftNavPanel}*!/*/}
-                {/*            /!*<ListPanel />*!/*/}
-                {/*        </LeftPanel>*/}
-                {/*    </div>*/}
-                {/*</div>*/}
+                {/*<Root3D/>*/}
+                {/*<Default3D/>*/}
+                {/*<Physic3D/>*/}
             </div>
 
             <Footer />

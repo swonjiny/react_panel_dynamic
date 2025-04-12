@@ -32,10 +32,24 @@
 
 .panel-content {
     padding: 10px;
+    flex: 1;
+    overflow-y: auto;
 }
 
 /* 드래그 가능한 패널을 위한 스타일 */
 .floating-panel {
     cursor: move;
     user-select: none;
+}
+/* 패널 크기 조절 핸들 */
+.resize-handle {
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+    width: 10px;
+    height: 10px;
+    cursor: se-resize;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
 }

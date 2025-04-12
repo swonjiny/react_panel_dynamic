@@ -69,15 +69,4 @@
     overflow-y: auto;
 }
 
-/* 패널 크기 조절 핸들 */
-.resize-handle {
-    position: absolute;
-    right: -5px;
-    bottom: -5px;
-    width: 10px;
-    height: 10px;
-    cursor: se-resize;
-    background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 50%;
-}
+

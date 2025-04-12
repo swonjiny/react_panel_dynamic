@@ -1,5 +1,4 @@
 // components/Layout/LeftPanel.jsx
-import { useState } from 'react';
 import { IoClose, IoChevronDown, IoChevronUp } from "react-icons/io5"; // react-icons 사용
 
 function LeftPanel({ position, isVisible, onClose, onToggle, children, title, isCollapsed }) {

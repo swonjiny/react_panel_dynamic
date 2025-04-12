@@ -1,0 +1,177 @@
+/* Layout.css */
+.layout-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+
+.content-area {
+    flex: 1;
+    position: relative;
+    margin-top: 60px; /* Header 높이 */
+    margin-bottom: 60px; /* Footer 높이 */
+}
+
+.main-content {
+    width: 100%;
+    text-align: center;
+}
+
+.main-content .content-container{
+    width: inherit;
+
+}
+
+.floating-panels-container {
+    position: fixed;
+    top: 60px; /* Header 아래부터 시작 */
+    left: 0;
+    right: 0;
+    bottom: 60px; /* Footer 위까지 */
+    pointer-events: none; /* 메인 컨텐츠 클릭 가능하도록 */
+    z-index: 100;
+}
+
+.left-floating-panels {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 300px;
+    pointer-events: auto; /* 패널 클릭 가능하도록 복원 */
+}
+
+.right-floating-panels {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 400px;
+    pointer-events: auto; /* 패널 클릭 가능하도록 복원 */
+}
+
+.right-panels-row {
+    display: flex;
+    gap: 10px;
+}
+
+/* 반응형 스타일 */
+@media (max-width: 1400px) {
+    .left-floating-panels {
+        width: calc(50% - 30px);
+    }
+
+    .right-floating-panels {
+        width: calc(50% - 30px);
+    }
+}
+
+@media (max-width: 768px) {
+    .floating-panels-container {
+        position: static;
+        margin: 20px;
+    }
+
+    .left-floating-panels,
+    .right-floating-panels {
+        position: static;
+        width: 100%;
+    }
+}
+
+
+/* Layout.css에 추가할 스타일 */
+.floating-panel {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.floating-panel.collapsed {
+    height: 50px !important; /* 헤더만 보이도록 */
+    min-height: auto !important;
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    background: #f8f9fa;
+    border-bottom: 1px solid #eee;
+    min-height: 50px;
+}
+
+.panel-controls {
+    display: flex;
+    gap: 5px;
+}
+
+.control-button {
+    background: none;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.control-button:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.toggle-button {
+    color: #666;
+}
+
+.close-button {
+    color: #ff4444;
+}
+
+.panel-content {
+    transition: all 0.3s ease;
+    opacity: 1;
+    height: calc(100% - 50px); /* 헤더 높이 제외 */
+    overflow-y: auto;
+}
+
+.panel-content.hidden {
+    opacity: 0;
+    height: 0;
+}
+
+/* 패널 복원 버튼 컨테이너 */
+.panel-restore-container {
+    position: fixed;
+    left: 20px;
+    bottom: 20px;
+    z-index: 1000;
+    display: flex;
+    gap: 10px;
+}
+
+/* 패널 복원 버튼 */
+.restore-button {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: all 0.2s ease;
+}
+
+.restore-button:hover {
+    background: #f8f9fa;
+    transform: translateY(-2px);
+}

@@ -1,0 +1,20 @@
+[
+    {
+      "id": 1,
+      "label": "메뉴메뉴1",
+      "path": "/menu/menu1",
+      "icon": "📊",
+      "order": 1,
+      "isActive": true,
+      "isCollapsed" : true
+    },
+  {
+    "id": 2,
+    "label": "메뉴메뉴2",
+    "path": "/menu/menu2",
+    "icon": "📊",
+    "order": 2,
+    "isActive": true,
+    "isCollapsed" : true
+  }
+]

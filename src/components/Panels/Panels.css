@@ -1,0 +1,83 @@
+/* components/Panels/Panels.css */
+/* 차트 패널 스타일 */
+.chart-panel {
+    padding: 10px;
+}
+
+.chart-container {
+    background: #f8f9fa;
+    border-radius: 6px;
+    padding: 15px;
+    min-height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart-placeholder {
+    color: #666;
+    text-align: center;
+}
+
+/* 리스트 패널 스타일 */
+.list-panel {
+    padding: 10px;
+}
+
+.list-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.list-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: 1px solid #eee;
+}
+
+.list-item:last-child {
+    border-bottom: none;
+}
+
+/* 패널 공통 스타일 수정 */
+.floating-panel {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    padding: 15px;
+    flex: 1;
+    min-height: 200px;
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+}
+
+.panel-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eee;
+    margin-bottom: 10px;
+}
+
+.panel-content {
+    flex: 1;
+    overflow-y: auto;
+}
+
+/* 패널 크기 조절 핸들 */
+.resize-handle {
+    position: absolute;
+    right: -5px;
+    bottom: -5px;
+    width: 10px;
+    height: 10px;
+    cursor: se-resize;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+}

@@ -1,0 +1,49 @@
+[ {
+  "id": 0,
+  "leftNav": {
+    "isVisible": true,
+    "isCollapsed": false,
+    "path" : "/src/components/Panels/ListPanel2.jsx"
+  },
+  "leftWork": {
+    "isVisible": true,
+    "isCollapsed": false,
+    "path" : "/src/components/Panels/3D/Scene3D.jsx"
+  }
+},
+  {
+    "id": 1,
+    "leftNav": {
+      "isVisible": true,
+      "isCollapsed": false,
+      "path" : "/src/components/Panels/3D/Scene3D.jsx"
+    },
+    "leftWork": {
+      "isVisible": true,
+      "isCollapsed": false,
+      "path" : "/src/components/Panels/ListPanel2.jsx"
+    }
+  },
+  {
+    "id": 2,
+    "leftNav": {
+      "isVisible": false,
+      "isCollapsed": false
+    },
+    "leftWork": {
+      "isVisible": false,
+      "isCollapsed": true
+    }
+  },
+  {
+    "id": 3,
+    "leftNav": {
+      "isVisible": true,
+      "isCollapsed": true
+    },
+    "leftWork": {
+      "isVisible": false,
+      "isCollapsed": true
+    }
+  }
+]

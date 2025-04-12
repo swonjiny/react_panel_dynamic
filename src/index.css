@@ -1,0 +1,19 @@
+.layout {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-content {
+  display: flex;
+}
+
+.left-section {
+  display: flex;
+  flex-direction: row;
+}
+
+.right-section {
+  display: flex;
+  flex-direction: column;
+}

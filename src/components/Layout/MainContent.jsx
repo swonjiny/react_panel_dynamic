@@ -30,11 +30,12 @@ export default function MainContent({tabIndex , setTabIndex ,tabs, setTabs}) {
 
     const modifyTab = () => {
         console.log(tabIndex)
-        tabs.map((tab, index) => ( index === tabIndex ? {...tab , content : (
+        const panel = panelList.filter(panel => panel.id === 1)[0]
+        setTabs(tabs.map((tab, index) => ( index === tabIndex ? {...tab , content : (
                 <div className="floating-panels-container">
-                    <PanelContainer LeftNavPanel={'/src/components/Layout/Footer.jsx' } LeftWorkPanel={'/src/components/Panels/ListPanel2.jsx'} />
+                    <PanelContainer panelInfo={panel}  />
                 </div>
-            )} : tab))
+            )} : tab)))
     }
 
     const addTab = () => {
@@ -49,10 +50,7 @@ export default function MainContent({tabIndex , setTabIndex ,tabs, setTabs}) {
         }])
     }
 
-    useEffect(() => {
 
-        console.log(tabIndex)
-    }, [tabIndex]);
 
     useEffect(() => {
         axios('/api/panel.json')
@@ -60,6 +58,9 @@ export default function MainContent({tabIndex , setTabIndex ,tabs, setTabs}) {
                 setPanelList(res.data)
             })
     }, []);
+    useEffect(() => {
+        console.log("tabs 상태가 업데이트됨:", tabs);
+    }, [tabs]);
 
     return (
         <div>

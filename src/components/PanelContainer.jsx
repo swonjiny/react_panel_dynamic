@@ -10,6 +10,9 @@ const PanelContainer = ({panelInfo}) => {
         console.log(panelInfo)
     }, []);
 
+    useEffect(() => {
+        setPanel(panelInfo)
+    }, [panelInfo]);
     // 판넬 닫고 열기
     const handlePanelToggle = (panelId) => {
         setPanel(prev => ({

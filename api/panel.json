@@ -1,0 +1,97 @@
+[ {
+  "id": 0,
+  "url": "",
+  "leftNav": {
+    "isVisible": true,
+    "isCollapsed": false,
+    "path" : "/src/components/Panels/Panel1.jsx"
+  },
+  "leftWork": {
+    "isVisible": true,
+    "isCollapsed": false,
+    "path" : "/src/components/Panels/3D/Scene3D.jsx"
+  },
+  "rightTop": {
+    "isVisible": true,
+    "isCollapsed": false,
+    "path" : "/src/components/Panels/ListPanel2.jsx"
+  },
+  "rightBottom": {
+    "isVisible": true,
+    "isCollapsed": false,
+    "path" : "/src/components/Panels/ListPanel2.jsx"
+  }
+},
+  {
+    "id": 1,
+    "url": "service",
+    "leftNav": {
+      "isVisible": true,
+      "isCollapsed": true,
+      "path" : "/src/components/Panels/3D/Scene3D.jsx"
+    },
+    "leftWork": {
+      "isVisible": true,
+      "isCollapsed": false,
+      "path" : "/src/components/Panels/ListPanel2.jsx"
+    },
+    "rightTop": {
+      "isVisible": true,
+      "isCollapsed": false,
+      "path" : "/src/components/Panels/ListPanel2.jsx"
+    },
+    "rightBottom": {
+      "isVisible": true,
+      "isCollapsed": false,
+      "path" : "/src/components/Panels/ListPanel2.jsx"
+    }
+  },
+  {
+    "id": 2,
+    "url": "about",
+    "leftNav": {
+      "isVisible": false,
+      "isCollapsed": false,
+      "path" : "/src/components/Panels/ListPanel2.jsx"
+    },
+    "leftWork": {
+      "isVisible": false,
+      "isCollapsed": true,
+      "path" : "/src/components/Panels/ListPanel2.jsx"
+    },
+    "rightTop": {
+      "isVisible": true,
+      "isCollapsed": false,
+      "path" : "/src/components/Panels/Panel1.jsx"
+    },
+    "rightBottom": {
+      "isVisible": true,
+      "isCollapsed": false,
+      "path" : "/src/components/Panels/ListPanel2.jsx"
+    }
+  },
+  {
+    "id": 3,
+    "url": "etc",
+    "leftNav": {
+      "isVisible": true,
+      "isCollapsed": true,
+      "path" : "/src/components/Panels/ListPanel2.jsx"
+    },
+    "leftWork": {
+      "isVisible": false,
+      "isCollapsed": true,
+      "path" : "/src/components/Panels/ListPanel2.jsx"
+    },
+    "rightTop": {
+      "isVisible": true,
+      "isCollapsed": false,
+      "path" : "/src/components/Panels/ListPanel2.jsx"
+    },
+    "rightBottom": {
+      "isVisible": true,
+      "isCollapsed": false,
+      "path" : "/src/components/Panels/Panel1.jsx"
+    }
+  }
+]
